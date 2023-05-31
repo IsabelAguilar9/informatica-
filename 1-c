@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float radio, altura, pi, multiplicaion,volumen,x ;
+    radio= 14.5 ;
+    altura= 26.79;
+    pi=3.141592;
+    x=pow(radio,2);
+   multiplicaion= pi* x * altura; 
+    volumen= multiplicaion/3;
+printf("el volumen del cono es %.2f ", volumen);
+
+    return 0;
+}
