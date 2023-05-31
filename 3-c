@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float n,m,h,s ;
+    printf (" Escribir un numero de un tiempo transcurido en segundos  \n");
+    scanf ("%f", &n);
+    s= n ;
+    // de segundos a minutos 
+    m= n/60;
+    // de segundos a horas
+    h= n/3600;
+    printf ( " \n El tiempo transcurido en segunods es %.f s, en minutos es %.3f min y en horas es %.5f hr \n " , s,m,h);
+    return 0;
+}
