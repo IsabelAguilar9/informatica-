@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    float e1, e2, e3, p1, p2, pa,s, d ;
+    printf (" Escribir las respectivas notas de los  3 examanes realizados\n");
+    scanf ("%f %f %f", &e1, &e2, &e3);
+    printf (" Escribir las respectivas notas de los  2 practicas realizadas \n");
+    scanf ("%f %f ", &p1, &p2 );
+    printf (" Escribir la nota la actividad adicional \n");
+    scanf ("%f ", &pa );
+    s= e1+ e2+ e3+ p1+ p2+pa;
+    d= s/6; 
+    printf ( " \n La nota final de la mataeria informatica es  %.2f " , d);
+    return 0;
+}
