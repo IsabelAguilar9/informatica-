@@ -1,20 +1,15 @@
 #include <stdio.h>
-
+#include <math.h>
 int main()
 {
-    float x, sigma, y, lambda, alfa, f   ;
-    printf (" Escribir un numero para x, sigma, y, lambda, alfa, \n");
-   
-   // primera fraccion 
-    x = 3 * (r + 34);
-    y = 4/x; 
-    // segunda fraccion 
-    z= 9*(a+ b*c);
-    // tercera fraccion 
-    h= a + b*d;
-    p = 3 + d*(2 + a);
-    k= p/h ;
-    // opercion final 
-    t= y-z+k;
-    printf ( " \n El resultado de la ecuacion es   %.4f " , t );
+    int x, y; 
+    float sigma, lambda, alfa, f  ;
+    x= 12;
+    sigma= 2.1836;
+    y= 3;
+    lambda= 1.11695;
+    alfa= 328.67;
+   f=( 3*((x+sigma*y)/ (pow(x,2) - pow(y,2))))- (lambda * (alfa-13.7));
+    printf ( " \n El resultado de la ecuacion es   %.4f " , f );
     return 0;
+}
