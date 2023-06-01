@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    float r, a, b, c, d, x, y,z,p,h,k,t   ;
+    printf (" Escribir un numero para r,a,b,c,d \n");
+    scanf ("%f %f %f %f %f",&r,&a,&b,&c,&d);
+   // primera fraccion 
+    x = 3 * (r + 34);
+    y = 4/x; 
+    // segunda fraccion 
+    z= 9*(a+ b*c);
+    // tercera fraccion 
+    h= a + b*d;
+    p = 3 + d*(2 + a);
+    k= p/h ;
+    // opercion final 
+    t= y-z+k;
+    printf ( " \n El resultado de la ecuacion es   %.4f " , t );
+    return 0;
+ 
+}
