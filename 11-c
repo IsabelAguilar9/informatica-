@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+float cp,ia,ap ; 
+    printf ( " Por favor escribir los datos correspondintes  \n capital prestado  " );
+    scanf("%f", &cp);
+    printf ( " interés anual \n " );
+    scanf("%f", &ia);
+    printf ( " años que dura el préstamo \n " );
+    scanf("%f", &ap);
+    ap*= 12;
+    
+   
+    printf ( " Sueldo neto: %.2f  \n", ia );
+    return 0;
+}
