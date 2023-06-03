@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-float cp,ia,ap ; 
+float cp,ia,ap, cuota,x ; 
     printf ( " Por favor escribir los datos correspondintes  \n capital prestado  " );
     scanf("%f", &cp);
     printf ( " interés anual \n " );
@@ -10,8 +10,9 @@ float cp,ia,ap ;
     printf ( " años que dura el préstamo \n " );
     scanf("%f", &ap);
     ap*= 12;
-    
-   
-    printf ( " Sueldo neto: %.2f  \n", ia );
+    ia/= 12;
+    x= 1 + (ia/100);
+   cuota= (cp*ia)/(1-pow(x,- ap));
+    printf ( " Sueldo neto: %.2f  \n", cuota );
     return 0;
 }
